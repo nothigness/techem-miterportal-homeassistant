@@ -1,0 +1,83 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Techem Mieterportal",
+        "description": "Zugang zum Techem-Mieterportal einrichten.",
+        "data": {
+          "username": "E-Mail",
+          "password": "Passwort",
+          "fetch_day": "Abruftag (x.ter Tag des Monats)",
+          "gas_statistics": "Gasstatistik für das Energie-Dashboard"
+        },
+        "data_description": {
+          "gas_statistics": "Nur bei Gasheizung aktivieren. Monatswerte werden rückwirkend am Monatsende gebucht; es liegen keine Tagesmesswerte vor."
+        }
+      },
+      "unit": {
+        "title": "Verbrauchsstelle",
+        "data": {
+          "unit_id": "Verbrauchsstelle"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Erneut anmelden",
+        "data": {
+          "password": "Passwort"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Anmeldung abgelehnt. Zugangsdaten prüfen.",
+      "cannot_connect": "Portal nicht erreichbar, Datenformat geändert oder Verbrauchsstelle fehlt."
+    },
+    "abort": {
+      "already_configured": "Dieses Konto ist bereits eingerichtet.",
+      "reauth_successful": "Zugangsdaten aktualisiert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Abrufplanung",
+        "data": {
+          "fetch_day": "Abruftag (x.ter Tag des Monats)",
+          "gas_statistics": "Gasstatistik für das Energie-Dashboard"
+        },
+        "data_description": {
+          "gas_statistics": "Nur bei Gasheizung aktivieren. Monatswerte werden rückwirkend am Monatsende gebucht; es liegen keine Tagesmesswerte vor."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "heating": {
+        "name": "Heizverbrauch"
+      },
+      "original": {
+        "name": "Heizverbrauch Originaleinheiten"
+      },
+      "address": {
+        "name": "Verbrauchsstelle"
+      },
+      "last_success": {
+        "name": "Letzter erfolgreicher Abruf"
+      },
+      "status": {
+        "name": "Abrufstatus",
+        "state": {
+          "waiting": "Wartet",
+          "ok": "Erfolgreich",
+          "retry_pending": "Erneuter Versuch ausstehend",
+          "auth_error": "Anmeldung erforderlich"
+        }
+      }
+    },
+    "button": {
+      "refresh": {
+        "name": "Jetzt abrufen"
+      }
+    }
+  }
+}

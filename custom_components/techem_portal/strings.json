@@ -1,0 +1,83 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Techem Mieterportal",
+        "description": "Connect your Techem tenant portal account.",
+        "data": {
+          "username": "Email",
+          "password": "Password",
+          "fetch_day": "Fetch day (day of the month)",
+          "gas_statistics": "Gas statistics for the Energy dashboard"
+        },
+        "data_description": {
+          "gas_statistics": "Enable only for gas heating. Monthly totals are booked retrospectively at month end; daily readings are not available."
+        }
+      },
+      "unit": {
+        "title": "Consumption location",
+        "data": {
+          "unit_id": "Consumption location"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sign in again",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Sign-in rejected. Check your credentials.",
+      "cannot_connect": "Cannot connect, unsupported data format, or consumption location missing."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Credentials updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Fetch schedule",
+        "data": {
+          "fetch_day": "Fetch day (day of the month)",
+          "gas_statistics": "Gas statistics for the Energy dashboard"
+        },
+        "data_description": {
+          "gas_statistics": "Enable only for gas heating. Monthly totals are booked retrospectively at month end; daily readings are not available."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "heating": {
+        "name": "Heating consumption"
+      },
+      "original": {
+        "name": "Heating original units"
+      },
+      "address": {
+        "name": "Consumption location"
+      },
+      "last_success": {
+        "name": "Last successful fetch"
+      },
+      "status": {
+        "name": "Fetch status",
+        "state": {
+          "waiting": "Waiting",
+          "ok": "Successful",
+          "retry_pending": "Retry pending",
+          "auth_error": "Sign-in required"
+        }
+      }
+    },
+    "button": {
+      "refresh": {
+        "name": "Fetch now"
+      }
+    }
+  }
+}

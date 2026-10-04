@@ -1,0 +1,17 @@
+{
+  "domain": "techem_portal",
+  "name": "Techem Mieterportal",
+  "codeowners": [
+    "@nothigness"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/nothigness/techem-miterportal-homeassistant#readme",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.2.0",
+  "issue_tracker": "https://github.com/nothigness/techem-miterportal-homeassistant/issues",
+  "dependencies": [
+    "recorder"
+  ]
+}
